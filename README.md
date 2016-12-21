@@ -16,10 +16,12 @@
 
 
 ## TODO For Aonic
-https://github.com/thruthesky/aonic
-    * lazy loading
-    * ionic deploy
-    * firebase auth, db, storage
+
+* 기본적인 라우팅 코드
+* 기본적인 deploy 코드
+* 기본적인 lazy loading
+* 기본적인 firebase 연동.
+
 
 ## TODO Much laster
 
