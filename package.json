@@ -1,0 +1,48 @@
+{
+  "name": "aonic-hello-world",
+  "author": "Aonic Framework",
+  "homepage": "http://github.com/thruthesky/aonic",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve --address 192.168.26.2 --port 8000"
+  },
+  "config": {
+    "ionic_source_map_type": "source-map",
+    "ionic_copy": "./copy-hack.config.js",
+    "ionic_watch": "./watch-hack.config.js"
+  },
+
+  "dependencies": {
+    "@angular/common": "2.2.3",
+    "@angular/compiler": "2.2.3",
+    "@angular/compiler-cli": "2.2.3",
+    "@angular/core": "2.2.3",
+    "@angular/forms": "2.2.3",
+    "@angular/http": "2.2.3",
+    "@angular/platform-browser": "2.2.3",
+    "@angular/platform-browser-dynamic": "2.2.3",
+    "@angular/platform-server": "2.2.3",
+    "@angular/router": "3.2.3",
+    "@ionic/cloud-angular": "^0.8.0",
+    "@types/lodash": "^4.14.41",
+    "ng2-file-upload": "^1.1.4-2",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.26"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "0.0.48",
+    "typescript": "2.0.9"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-splashscreen"
+  ],
+  "cordovaPlatforms": [],
+  "description": "hack2: An Ionic project"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ionic-hack",
+  "app_id": "b3867255",
+  "v2": true,
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "/[a-zA-Z0-9/-]+",
+      "proxyUrl": "http://192.168.26.2:8000/"
+    }
+  ]
+}
