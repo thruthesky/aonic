@@ -2,8 +2,6 @@ var watch = require('./node_modules/@ionic/app-scripts/dist/watch');
 var copy = require('./node_modules/@ionic/app-scripts/dist/copy');
 var copyConfig = require('./copy-hack.config');
 
-var copyConfigKeys = Object.keys(copyConfig);
-
 var arr = [];
 
 for (var _i = 0, _a = Object.keys(copyConfig); _i < _a.length; _i++) {

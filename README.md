@@ -17,11 +17,12 @@
 
 ## TODO For Aonic
 
-* 기본적인 라우팅 코드
 * 기본적인 deploy 코드
 * 기본적인 lazy loading
 * 기본적인 firebase 연동.
 
+
+* @done 기본적인 라우팅 코드
 
 ## TODO Much laster
 
@@ -62,8 +63,9 @@ You do not need to install these module one by one. these are installed by 'npm 
 
 
 
-# history
+# Update history
 
+2016-12-22 - Remove address and port on "ionic serve" in package.json.
 2016-12-21 - for public use.
 2016-12-02 - for withcenter internal use.
 
