@@ -6,7 +6,7 @@
   "proxies": [
     {
       "path": "/[a-zA-Z0-9/-]+",
-      "proxyUrl": "http://192.168.26.2:8000/"
+      "proxyUrl": "http://localhost:8000/"
     }
   ]
 }
