@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  
-  
+
   <base id="baseHref" href="">
   <script src="cordova.js"></script><!-- cordova.js required for cordova apps. For web, it should be null script. -->
+  <!-- @see README.md for more detail on <base href=''> -->
   <script type="text/javascript">
     if ( window.cordova ) {
       if ( typeof IonicDevServer != 'undefined' ) path = '/'; // live reload. source comes from desktop computer.
@@ -14,7 +14,7 @@
     var theBase = document.getElementById("baseHref");
     theBase.href = path;
   </script>
-  
+
   <meta charset="UTF-8">
   <title>Ionic App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -22,13 +22,10 @@
   <meta name="msapplication-tap-highlight" content="no">
 
 
-
-
-
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <!--No use for webapp or web woker <link rel="manifest" href="manifest.json">-->
   <meta name="theme-color" content="#4e8ef7">
-  
+
   <link href="build/main.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/bootstrap-v4/bootstrap.min.css">
   <link rel="stylesheet" href="assets/font-awesome-v4/css/font-awesome.min.css">

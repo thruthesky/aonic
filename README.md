@@ -83,3 +83,42 @@ You do not need to install these module one by one. these are installed by 'npm 
 
 즉, 앱으로 제작 할 때에는 <base href="/android_asset/www/"> 와 같이 해서, 컴파일을 한 다음 deploy 를 한다.
 
+
+
+## <base href=''>
+
+The base href with empty string and the follow javascript code in index.html is fine only if you don't do ionic deploy.
+If you do Ionic deploy, consider this thing.
+````
+  <base id="baseHref" href="./">
+  <script src="cordova.js"></script><!-- cordova.js required for cordova apps. For web, it should be null script. -->
+
+  <script type="text/javascript">
+    if ( window.cordova ) {
+      if ( typeof IonicDevServer != 'undefined' ) path = '/'; // live reload. source comes from desktop computer.
+      else path = './'; // For production mode of mobile app, no live reload. so, <base href='./'> for app update.
+    }
+    else path = '/'; // For web, change <base href=''> to <base href='/'> for reloading. 
+    var theBase = document.getElementById("baseHref");
+    theBase.href = path;
+  </script>
+````
+Since, Ionic Deploy changes the base app folder, <base href=''> should be relative.
+
+And it often causes problem only 'go back' button.
+
+so, do the following to avoid crash on 'go back' button.
+
+````
+  backButton() {
+    document.addEventListener("backbutton", () => {
+      let url = parse_url( location.href );
+      if ( url['path'] == '/' || url['path'] == '/android_asset/www/') {
+        navigator.app.exitApp();
+      }
+      else {
+        navigator.app.backHistory();
+      }
+    }, false );
+  }
+````

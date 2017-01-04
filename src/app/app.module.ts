@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 
 const appRoutes: Routes = [
-  { path: 'help', loadChildren: '../pages/help/help.module#HelpModule' },
+  { path: 'help', component: HelpPage },
   { path: '', component: HomePage }
 ];
 
