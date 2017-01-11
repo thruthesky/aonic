@@ -5,7 +5,7 @@
   "typescript": true,
   "proxies": [
     {
-      "path": "/[a-zA-Z0-9/-]+",
+      "path": "/[a-zA-Z0-9/-_]+",
       "proxyUrl": "http://localhost:8000/"
     }
   ]

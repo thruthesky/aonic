@@ -14,7 +14,6 @@
     "ionic_copy": "./copy-hack.config.js",
     "ionic_watch": "./watch-hack.config.js"
   },
-
   "dependencies": {
     "@angular/common": "2.2.3",
     "@angular/compiler": "2.2.3",
@@ -33,7 +32,8 @@
     "zone.js": "0.6.26"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "0.0.48",
+    "@ionic/app-scripts": "1.0.0",
+    "sw-toolbox": "^3.4.0",
     "typescript": "2.0.9"
   },
   "cordovaPlugins": [

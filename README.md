@@ -122,3 +122,21 @@ so, do the following to avoid crash on 'go back' button.
     }, false );
   }
 ````
+
+
+# Live reloading
+
+Live reloading in Aonic is different from Ionic2 since the web/app is just plain Angular 2.
+
+To do live reloading with 'routing', the followings should match.
+
+1. correct settings of '<base href="">'
+2. 'proxy' in ionic.config.json
+3. IP:PORT of ionic webpack dev webserver 
+4. IP:PORT of device( browser )
+
+By defualt, you can do the following to do live reloading with routing.;
+
+````
+ionic serve --address localhost --port 8000
+````
