@@ -25,7 +25,6 @@
     "@angular/platform-browser-dynamic": "2.2.3",
     "@angular/platform-server": "2.2.3",
     "@angular/router": "3.2.3",
-    "@ionic/cloud-angular": "^0.8.0",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.18",
     "@types/lodash": "^4.14.41",
     "ng2-file-upload": "^1.1.4-2",

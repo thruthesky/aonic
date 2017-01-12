@@ -3,4 +3,11 @@ import { Component } from '@angular/core';
     selector: 'home-page',
     templateUrl: 'home.html'
 })
-export class HomePage {}
+export class HomePage {
+    constructor() {
+        
+    }
+    onClickModal() {
+
+    }
+}
