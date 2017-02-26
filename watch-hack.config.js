@@ -19,7 +19,7 @@ var config_hack = {
 
 module.exports = {
   srcFiles: {
-    paths: ['{{SRC}}/**/*.(ts|html|scss)'],
+    paths: ['{{SRC}}/**/*.(ts|html|s(c|a)ss)'],
     options: { ignored: ['{{SRC}}/**/*.spec.ts', '**/*.DS_Store'] },
     callback: watch.buildUpdate
   },
