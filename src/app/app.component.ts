@@ -2,17 +2,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: `app-component`,
   template: `
-    <router-outlet></router-outlet>
-    <template ngbModalContainer></template>
+    
+    Aonic Works with Angular v4.
   `
 })
 export class AppComponent {
   
   constructor() {
-    document.addEventListener("deviceready", () => this.onDevinceReady(), false);
+    console.log("How...?");
   }
-  onDevinceReady() {
-    console.log("yes, I am running in cordova.");
-  }
+  
   
 }
